@@ -1,3 +1,7 @@
+|<sub>Mac OS/Linux</sub>|
+|:---:|
+|[![Build Status](https://travis-ci.com/csu-fangjun/hello-bazel.svg?branch=master)](https://travis-ci.com/csu-fangjun/hello-bazel)|
+
 
 ## Use Bazel for C++ Programming
 

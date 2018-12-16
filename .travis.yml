@@ -1,0 +1,30 @@
+# Travis CI for hello-bazel
+#
+# Author: Fangjun Kuang, fangjun.kuang <at> gmail <dot> com
+# Date: December 16, 2018
+#
+
+os:
+  - linux
+  - osx
+
+language: cpp
+
+compiler:
+  - gcc
+  - clang
+
+env:
+  - PATH=$HOME/bin:${PATH}  # for bazel
+
+notifications:
+  email: false
+
+sudo: false
+
+install:
+    - ./travis/install-bazel.sh "$TRAVIS_OS_NAME"
+
+script:
+    - ./travis/scripts.sh
+
