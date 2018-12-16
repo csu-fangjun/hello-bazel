@@ -14,6 +14,7 @@ import os.path
 Status = {
   'A': 'Added',
   'M': 'Modified',
+  'R': 'Renamed',
 }
 
 Extensions = [
@@ -42,7 +43,10 @@ def git_status_porcelain():
         code = status[0]
         for s in Status:
             if s in code:
-                res.append(status[1])
+                if 'R' in code:
+                    res.append(status[3])   # R foo.cc -> bar.cc
+                else:
+                    res.append(status[1])
                 break
     return res
 

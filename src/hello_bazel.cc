@@ -16,7 +16,6 @@ int main(int argc, char* argv[]) {
   google::InitGoogleLogging(argv[0]);
   FLAGS_alsologtostderr = true;
   FLAGS_colorlogtostderr = true;
-
   gflags::ParseCommandLineFlags(&argc, &argv, true);
 
   kk::Student student;
