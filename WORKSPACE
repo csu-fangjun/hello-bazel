@@ -2,6 +2,8 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 # gflags
+# its name MUST be com_github_gflags_gflags !!
+# Because glog requires that!
 http_archive(
     name = "com_github_gflags_gflags",
     strip_prefix = "gflags-2.2.2",
@@ -26,8 +28,18 @@ git_repository(
 # use git instead for glog!
 
 git_repository(
-    name = "com_github_google_glog",
+    name = "com_google_glog",
     remote = "https://github.com/google/glog.git",
     commit = "1d900193d8e7e4ae3449231bbe7058933c1c7fba",
+)
+
+# protobuf
+http_archive(
+    name = "com_google_protobuf",
+    strip_prefix = "protobuf-3.6.1",
+    sha256 = "fd65488e618032ac924879a3a94fa68550b3b5bcb445b93b7ddf3c925b1a351f",
+    urls = [
+        "https://github.com/protocolbuffers/protobuf/releases/download/v3.6.1/protobuf-all-3.6.1.tar.gz",
+    ],
 )
 

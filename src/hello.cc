@@ -8,7 +8,9 @@
 #include <gflags/gflags.h>
 #include <glog/logging.h>
 
-DEFINE_int32(year, 1989, "some info about the year");
+#include "proto/student.pb.h"
+
+DEFINE_int32(age, 18, "some info about the age");
 
 int main(int argc, char* argv[]) {
   google::InitGoogleLogging(argv[0]);
@@ -17,8 +19,11 @@ int main(int argc, char* argv[]) {
 
   gflags::ParseCommandLineFlags(&argc, &argv, true);
 
+  kk::Student student;
+  student.set_name("csu");
+  student.mutable_age()->set_age(FLAGS_age);
 
-  LOG(WARNING) << "year is: " << FLAGS_year << "\n";
+  LOG(WARNING) << "\n" << student.DebugString();
 
   return 0;
 }

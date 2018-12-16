@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package kk;
+
+// path is relative to the WORKSPACE file
+import "proto/age.proto";
+
+message Student {
+  string name = 1;
+  Age age = 2;
+}

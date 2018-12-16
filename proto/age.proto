@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package kk;
+
+message Age {
+  int32 age = 1;
+}
