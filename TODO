@@ -1,0 +1,27 @@
+
+## SGI STL
+https://github.com/karottc/sgi-stl
+and its documentation http://www.martinbroadhurst.com/stl/
+
+## google c++ library
+https://github.com/abseil/abseil-cpp
+
+## facebook c++ library
+https://github.com/facebook/folly
+
+## facebook c++ networking library
+https://github.com/facebook/wangle
+
+## leveldb
+https://github.com/google/leveldb
+
+## snappy
+https://github.com/google/snappy
+
+## gperftools
+https://github.com/gperftools/gperftools
+
+## llvm source code
+https://github.com/llvm-mirror/llvm
+
+
