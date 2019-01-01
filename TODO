@@ -1,4 +1,13 @@
 
+
+https://github.com/Tencent/ncnn/blob/master/src/layer/arm/dequantize_arm.cpp
+https://github.com/Tencent/ncnn/tree/master/src/layer/arm
+https://developer.arm.com/open-source/gnu-toolchain/gnu-a/downloads
+
+https://github.com/tensorflow/tensorflow/blob/master/third_party/toolchains/cpus/arm/arm_compiler_configure.bzl
+
+https://github.com/stanford-futuredata/tensorflow-noscope/blob/master/tensorflow/workspace.bzl
+
 ## SGI STL
 https://github.com/karottc/sgi-stl
 and its documentation http://www.martinbroadhurst.com/stl/

@@ -1,0 +1,13 @@
+# refer to
+#   https://docs.bazel.build/versions/0.20.0/guide.html#bazelrc
+#   https://github.com/XiaoMi/mace/blob/master/.bazelrc
+#   https://github.com/tensorflow/tensorflow/blob/master/.bazelrc
+
+build:aarch64 --cpu=aarch64
+build:aarch64 --crosstool_top=//third_party/toolchains/arm/aarch64:aarch64-compiler
+build:aarch64 --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
+
+build --copt=-std=c++11
+
+build --incompatible_remove_native_http_archive=false
+

@@ -1,0 +1,6 @@
+
+# refer to
+#   https://github.com/XiaoMi/mace/blob/master/.bazelrc
+
+import %workspace%/tools/bazel.rc
+
