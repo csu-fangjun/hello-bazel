@@ -1,7 +1,6 @@
-
 cc_binary(
-    name = "hello-arm",
-    srcs = ["hello-arm.cc"],
+    name = "hello_arm",
+    srcs = ["hello_arm.cc"],
 )
 
 cc_binary(

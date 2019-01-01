@@ -15,7 +15,9 @@ compiler:
   - clang
 
 env:
-  - PATH=$HOME/bin:${PATH}  # for bazel
+  global:
+    - PATH=$HOME/bin:$HOME/software/linaro/bin:$HOME/software/qemu/bin:${PATH}
+    - LD_LIBRARY_PATH=$HOME/software/linaro/aarch64-linux-gnu/libc/lib:${LD_LIBRARY_PATH}
 
 notifications:
   email: false
@@ -24,7 +26,8 @@ sudo: false
 
 install:
     - ./travis/install-bazel.sh "$TRAVIS_OS_NAME"
+    - if [ "$TRAVIS_OS_NAME" = "linux" ]; then ./travis/install-toolchain.sh; fi
 
 script:
-    - ./travis/scripts.sh
+    - ./travis/scripts.sh "$TRAVIS_OS_NAME"
 
