@@ -37,3 +37,19 @@ cc_test(
         "@com_google_gtest//:gtest",
     ],
 )
+
+cc_test(
+    name = "gcc_attributes_test",
+    srcs = ["gcc_attributes_test.cc"],
+    deps = [
+        "@com_google_gtest//:gtest",
+    ],
+)
+
+cc_test(
+    name = "clang_attributes_test",
+    srcs = ["clang_attributes_test.cc"],
+    deps = [
+        "@com_google_gtest//:gtest",
+    ],
+)

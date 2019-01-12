@@ -1,4 +1,34 @@
 
+a paper: (State of) The Art of War: Offensive Techniques in Binary Analysis
+- https://www.cs.ucsb.edu/~vigna/publications/2016_SP_angrSoK.pdf
+
+CS 6V81--005: System Security and Binary Code Analysis
+- http://www.utdallas.edu/~zhiqiang.lin/spring2012.html
+
+a paper What Every Computer Scientist Should Know about Floating-Point Arithmetic
+- http://www.validlab.com/goldberg/paper.pdf
+
+GNU Binutils Manual
+
+usage of `time`:
+- `time ./a.out`
+
+Google Python Style Guide
+- http://google.github.io/styleguide/pyguide.html
+
+ELF
+- https://github.com/BR903/ELFkickers
+- [ELF Hello World Tutorial](http://www.cirosantilli.com/elf-hello-world/#how-to-learn)
+- Parsing ELF and DWARF in Python, <https://github.com/eliben/pyelftools>
+
+C++ in ElvenLand
+  - http://serge-sans-paille.github.io/talks/cppcon2018/elvenland/elf/index.html#/step-2
+
+https://github.com/Quuxplusone/from-scratch
+  - implement STL from scratch
+
+https://code.woboq.org/gcc/include/c++/7.2.1/x86_64-pc-linux-gnu/bits/c++config.h.html
+  - how to use `__attribute__((xxx))` ??
 
 https://github.com/Tencent/ncnn/blob/master/src/layer/arm/dequantize_arm.cpp
 https://github.com/Tencent/ncnn/tree/master/src/layer/arm
